@@ -1,0 +1,19 @@
+#container {
+    width: 240px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -120px;
+    position :absolute ;
+    background:transparent ;
+  }
+  
+  span{
+      font-family: Florence, cursive, "Courier New", Courier;
+      font-size: 45px;
+      
+   }
+      body{
+          background:url("http://media.riffsy.com/images/e8c3b903e892d3aaf53570cdcefc0287/tenor.gif") no repeat-center;
+      }
+  
