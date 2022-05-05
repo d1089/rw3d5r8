@@ -106,7 +106,7 @@ if (browserok) {
 
 var hexChars = ["A", "B", "C", "D", "E", "F", 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-var messages = ["Hii..رخسار", "Nice to meet you...", "See You Later...!"];
+var messages = ["Hii..", "Nice to meet you...", "See You Later...!"];
 
 
 
