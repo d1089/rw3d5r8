@@ -38,7 +38,7 @@
   top: 10px;
   left: 10px;
   width: 350px;
-  height: 232px;
+  height: 245px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,12 +55,12 @@
   align-items: center;
   justify-content: center;
   color: var(--base);
-  margin-left: 50px;
+  margin-left: 69px;
 }
 .letter .body .close {
   position: absolute;
   right: 8px;
-  top: -42px;
+  top: -49px;
   font-size: 16px;
   font-family: 'Manjari', sans-serif;
   cursor: pointer;
