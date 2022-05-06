@@ -113,7 +113,7 @@ body {
   top: 0;
   left: 0;
   width: 300px;
-  border-top: 145px solid #7873a7;
+  border-top: 155px solid #7873a7;
   border-left: 200px solid transparent;
   border-right: 200px solid transparent;
   box-sizing: border-box;
@@ -126,7 +126,7 @@ body {
   position: absolute;
   top: 0;
   width: 400px;
-  height: 240px;
+  height: 250px;
   z-index: 25;
   background: linear-gradient(
         30deg,
@@ -134,21 +134,21 @@ body {
         var(--shadow) 50%,
         var(--base) 50%
       )
-      197px 110px/203px 139px no-repeat,
+      200px 129px/200px 124px no-repeat,
     linear-gradient(31deg, var(--base) 49%, var(--shadow) 50%, transparent 50%)
-      0px -3px/200px 127px no-repeat,
+      0px -7px/200px 136px no-repeat,
     linear-gradient(
         150deg,
         var(--base) 50%,
         var(--shadow) 50%,
         var(--base-dark) 53%
       )
-      0px 120px/200px 120px no-repeat,
+      0px 129px/200px 124px no-repeat,
     linear-gradient(
         148.7deg,
         transparent 50%,
         var(--shadow) 50%,
         var(--base) 51%
       )
-      200px 0px/200px 120px no-repeat;
+      200px -6px/200px 135px no-repeat;
 }
