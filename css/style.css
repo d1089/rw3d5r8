@@ -46,6 +46,7 @@
   border-radius: 2px;
   background: var(--letter);
   box-shadow: 0px 1px 7px -2px var(--base);
+  transform: translate(13px, -9.5px);
 }
 .letter .body {
   position: relative;
