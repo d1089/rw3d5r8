@@ -1,18 +1,112 @@
-#container {
-  width: 240px;
-  height: 300px;
-  top: 50%;
-  left: 50%;
-  margin: -150px 0 0 -120px;
-  position: absolute;
-  background: transparent;
+:root {
+  --base: #5E5690;
+  --base-light: #7873A7;
+  --base-dark: #555184;
+  --shadow: #4F4C6B;
+  --letter: #d8d7e5;
 }
 
-span {
-  font-family: Florence, cursive, 'Courier New', Courier;
-  font-size: 45px;
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body {
-  background: url('http://media.riffsy.com/images/e8c3b903e892d3aaf53570cdcefc0287/tenor.gif')
-    no repeat-center;
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  position: relative;
+  perspective: 600px;
+}
+
+.shadow {
+  position: absolute;
+  width: 300px;
+  height: 1px;
+  background: transparent;
+  border-radius: 30%;
+  box-shadow: 50px 65px 10px 5px #eeeef3;
+}
+
+.letter {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 350px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+  border-radius: 2px;
+  background: var(--letter);
+  box-shadow: 0px 1px 7px -2px var(--base);
+}
+.letter .body {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--base);
+  margin-left: 50px;
+}
+.letter .body .close {
+  position: absolute;
+  right: -23px;
+  top: -25px;
+  font-size: 16px;
+  font-family: "Manjari", sans-serif;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: crimson;
+}
+.letter .body .message {
+    font-size: 5px;
+    font-weight: 100;
+    text-align: left;
+    margin-bottom: auto;
+    margin-right: auto;
+    font-family: "Great Vibes", cursive;
+}
+
+.envelope {
+  position: relative;
+  width: 400px;
+  height: 240px;
+  background: linear-gradient(#cccbd7 0.5px, var(--base-light) 0.5px);
+  cursor: pointer;
+}
+
+.envelope::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  border-top: 145px solid #7873A7;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  box-sizing: border-box;
+  z-index: 30;
+  transform-origin: top;
+}
+
+.envelope::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 400px;
+  height: 240px;
+  z-index: 25;
+  background: linear-gradient(30deg, var(--base-dark) 47%, var(--shadow) 50%, var(--base) 50%) 197px 110px/203px 139px no-repeat, linear-gradient(31deg, var(--base) 49%, var(--shadow) 50%, transparent 50%) 0px -3px/200px 127px no-repeat, linear-gradient(150deg, var(--base) 50%, var(--shadow) 50%, var(--base-dark) 53%) 0px 120px/200px 120px no-repeat, linear-gradient(148.7deg, transparent 50%, var(--shadow) 50%, var(--base) 51%) 200px 0px/200px 120px no-repeat;
 }
